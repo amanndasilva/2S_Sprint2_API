@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\senai\\Desktop\\Boletim\\APIBoletim\\APIBoletim.csproj": {}
+    "C:\\Users\\senai\\Desktop\\2S_Sprint2_API\\Aula_2\\APIBoletim\\APIBoletim.csproj": {}
   },
   "projects": {
-    "C:\\Users\\senai\\Desktop\\Boletim\\APIBoletim\\APIBoletim.csproj": {
+    "C:\\Users\\senai\\Desktop\\2S_Sprint2_API\\Aula_2\\APIBoletim\\APIBoletim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\senai\\Desktop\\Boletim\\APIBoletim\\APIBoletim.csproj",
+        "projectUniqueName": "C:\\Users\\senai\\Desktop\\2S_Sprint2_API\\Aula_2\\APIBoletim\\APIBoletim.csproj",
         "projectName": "APIBoletim",
-        "projectPath": "C:\\Users\\senai\\Desktop\\Boletim\\APIBoletim\\APIBoletim.csproj",
+        "projectPath": "C:\\Users\\senai\\Desktop\\2S_Sprint2_API\\Aula_2\\APIBoletim\\APIBoletim.csproj",
         "packagesPath": "C:\\Users\\senai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\senai\\Desktop\\Boletim\\APIBoletim\\obj\\",
+        "outputPath": "C:\\Users\\senai\\Desktop\\2S_Sprint2_API\\Aula_2\\APIBoletim\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
