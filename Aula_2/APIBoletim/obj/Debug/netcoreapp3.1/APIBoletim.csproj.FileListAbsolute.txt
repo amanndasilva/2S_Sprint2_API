@@ -36,3 +36,12 @@ C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\obj\Debug\netcoreapp3.1\
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.dll
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.pdb
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.genruntimeconfig.cache
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.csproj.CoreCompileInputs.cache
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula_2\APIBoletim\obj\Debug\netcoreapp3.1\APIBoletim.csproj.CopyComplete
