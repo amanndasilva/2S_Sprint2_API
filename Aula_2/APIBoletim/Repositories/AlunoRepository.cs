@@ -22,15 +22,15 @@ namespace APIBoletim.Repositories
             cmd.Connection = conexao.Conectar();
 
             cmd.CommandText =
-                "UPDATE Aluno" +
-                "SET Nome = @nome, Ra = @ra, Idade = @idade" +
-                "WHERE IdAluno = @id";
-
-            cmd.Parameters.AddWithValue("@id", id);
+                "UPDATE Aluno SET " +
+                "Nome = @nome, " +
+                "Ra = @ra, " +
+                "Idade = @idade WHERE IdAluno = @id";
 
             cmd.Parameters.AddWithValue("@nome", a.Nome);
             cmd.Parameters.AddWithValue("@ra", a.Ra);
             cmd.Parameters.AddWithValue("@idade", a.Idade);
+            cmd.Parameters.AddWithValue("@id", id);
 
             cmd.ExecuteNonQuery();
 
@@ -79,6 +79,8 @@ namespace APIBoletim.Repositories
 
             //Comando o responsável por injetar os dados no banco
             cmd.ExecuteNonQuery();
+
+            conexao.Desconectar();
 
             return a;
         }
