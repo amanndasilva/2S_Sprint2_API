@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Pets", "..\..\..\source\repos\API_Pets\API_Pets.csproj", "{2044A9A8-9282-44DE-8351-BEB5E13B6261}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_Pets", "API_Pets.csproj", "{2044A9A8-9282-44DE-8351-BEB5E13B6261}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
