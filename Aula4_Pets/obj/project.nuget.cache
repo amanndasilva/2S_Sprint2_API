@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wFxO3mLd2h7CRycPy9GVLUJMzO9pO87ciVe6kaPzbOHnV0yV1WKMYiurR+7qCyqIzE3xbfbZvUo28dmQz6NE+A==",
+  "dgSpecHash": "b+ZMybHGpP+wiUGQR+8PW32tuqskW+vKHwfqvFB88t/XUFtbg2wVWwE6rnBW98V3LoYioK3rqQrVnLNkDS+0Ag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\senai\\Desktop\\2S_Sprint2_API\\API_Pets\\API_Pets.csproj",
+  "projectFilePath": "C:\\Users\\senai\\Desktop\\2S_Sprint2_API\\Aula4_Pets\\API_Pets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\senai\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\senai\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
