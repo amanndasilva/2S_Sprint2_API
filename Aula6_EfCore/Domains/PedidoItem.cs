@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace Aula6_EfCore.Domains
 {
-    public class PedidoItem
+    public class PedidoItem : BaseDomain
     {
-        [Key]
-        public Guid Id { get; set; }
 
         public Guid IdPedido { get; set; }
         [ForeignKey("IdPedido")]
@@ -22,10 +20,5 @@ namespace Aula6_EfCore.Domains
 
         [Required]
         public int Quantidade { get; set; }
-
-        public PedidoItem()
-        {
-            Id = Guid.NewGuid();
-        }
     }
 }

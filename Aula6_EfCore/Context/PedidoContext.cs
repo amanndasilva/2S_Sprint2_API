@@ -1,4 +1,4 @@
-﻿using Aula6_EfCore.Domains;
+﻿ using Aula6_EfCore.Domains;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

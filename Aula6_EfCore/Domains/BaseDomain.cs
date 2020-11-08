@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Aula6_EfCore.Domains
 {
-    /// <summary>
-    /// Define a classe Produto
-    /// </summary>
-    public class Produto : BaseDomain
+    public abstract class BaseDomain
     {
-        public string Nome { get; set; }
-        public float Preco { get; set; }
+        [Key]
+        public Guid Id { get; set; }
+
+        public BaseDomain()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }
