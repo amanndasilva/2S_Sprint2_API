@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Aula6_EfCore
 {
+#pragma warning disable CS1591
     public class Program
     {
         public static void Main(string[] args)
@@ -23,4 +24,5 @@ namespace Aula6_EfCore
                     webBuilder.UseStartup<Startup>();
                 });
     }
+#pragma warning restore CS1591
 }

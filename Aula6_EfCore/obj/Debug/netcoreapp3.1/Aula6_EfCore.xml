@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Aula6_EfCore</name>
+    </assembly>
+    <members>
+        <member name="M:Aula6_EfCore.Controllers.ProdutosController.Get">
+            <summary>
+            Mostra todos os produtos cadastrados
+            </summary>
+            <returns>Lista com todos os produtos</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Controllers.ProdutosController.Get(System.Guid)">
+            <summary>
+            Mostra um único produto
+            </summary>
+            <param name="id">Id do produto</param>
+            <returns>Um produto</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Controllers.ProdutosController.Post(Aula6_EfCore.Domains.Produto)">
+            <summary>
+            Cadastra um produto
+            </summary>
+            <param name="produto">Objeto completo de Produto</param>
+            <returns>Produto cadastrado</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Controllers.ProdutosController.Put(System.Guid,Aula6_EfCore.Domains.Produto)">
+            <summary>
+            Altera um determinado produto
+            </summary>
+            <param name="id">ID do produto</param>
+            <param name="produto">Objeto Produto com as alterações</param>
+            <returns>Informações do produto alterado</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Controllers.ProdutosController.Delete(System.Guid)">
+            <summary>
+            Exclui um produto
+            </summary>
+            <param name="id">Pede um ID do produto</param>
+            <returns>ID excluído</returns>
+        </member>
+        <member name="T:Aula6_EfCore.Domains.Produto">
+            <summary>
+            Define a classe Produto
+            </summary>
+        </member>
+        <member name="M:Aula6_EfCore.Interfaces.IPedidoRepository.Adicionar(System.Collections.Generic.List{Aula6_EfCore.Domains.PedidoItem})">
+            <summary>
+            Adiciona um novo pedido
+            </summary>
+            <param name="pedidosItens">Itens do pedido</param>
+            <returns>Pedido</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Repositories.ProdutoRepository.Listar">
+            <summary>
+            Lista todos os produtos cadastrados
+            </summary>
+            <returns>Retorna uma lista de prodtos</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Repositories.ProdutoRepository.BuscarPorId(System.Guid)">
+            <summary>
+            Busca um produto pelo Id
+            </summary>
+            <param name="id">Id do produto</param>
+            <returns>Lista de produto</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Repositories.ProdutoRepository.BuscarPorNome(System.String)">
+            <summary>
+            Busca um produto pelo nome
+            </summary>
+            <param name="nome">Nome do produto</param>
+            <returns>Retorna um produto</returns>
+        </member>
+        <member name="M:Aula6_EfCore.Repositories.ProdutoRepository.Adicionar(Aula6_EfCore.Domains.Produto)">
+            <summary>
+            Adiciona um novo produto 
+            </summary>
+            <param name="produto">Objeto do tipo produto</param>
+        </member>
+        <member name="M:Aula6_EfCore.Repositories.ProdutoRepository.Editar(Aula6_EfCore.Domains.Produto)">
+            <summary>
+            Edita um produto
+            </summary>
+            <param name="produto">Produto que será editado</param>
+        </member>
+    </members>
+</doc>

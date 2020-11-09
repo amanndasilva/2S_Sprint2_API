@@ -60,5 +60,12 @@ C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\obj\Debug\netcoreapp3.1\Aula6
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\obj\Debug\netcoreapp3.1\Aula6_EfCore.csproj.CoreCompileInputs.cache
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\obj\Debug\netcoreapp3.1\Aula6_EfCore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\obj\Debug\netcoreapp3.1\Aula6_EfCore.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\bin\Debug\netcoreapp3.1\Aula6_EfCore.xml
+C:\Users\senai\Desktop\2S_Sprint2_API\Aula6_EfCore\obj\Debug\netcoreapp3.1\Aula6_EfCore.xml
