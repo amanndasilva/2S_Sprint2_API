@@ -69,8 +69,13 @@ namespace Aula6_EfCore.Controllers
                 if (produto == null)
                     return NotFound();
 
+                Moeda dolar = new Moeda();
+
                 //Caso exista, retorna um Ok com os dados do produto
-                return Ok(produto);
+                return Ok(new {
+                    produto,
+                    valorDolar = produto.Preco / dolar.GetDolarValue()
+                });
             }
             catch (Exception ex)
             {
