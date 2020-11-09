@@ -11,8 +11,8 @@ namespace Aula6_EfCore.Interfaces
         List<Produto> Listar();
         Produto BuscarPorId(Guid id);
         List<Produto> BuscarPorNome(string nome);
-        void Adicionar(Produto p);
-        void Editar(Produto p);
+        void Adicionar(Produto produto);
+        void Editar(Produto produto);
         void Remover(Guid id);
     }
 }

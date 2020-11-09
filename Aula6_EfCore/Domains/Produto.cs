@@ -13,5 +13,8 @@ namespace Aula6_EfCore.Domains
     {
         public string Nome { get; set; }
         public float Preco { get; set; }
+
+        //Relacionamento com a tabela PedidoItem 1 -- N
+        public List<PedidoItem> PedidosItens { get; set; }
     }
 }

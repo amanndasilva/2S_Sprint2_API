@@ -28,14 +28,14 @@ namespace Aula6_EfCore.Controllers
             try
             {
                 //Lista os produtos no repositório
-                var p = _produtoRepository.Listar();
+                var produto = _produtoRepository.Listar();
 
                 //Verifica se eles existem, caso existam, retorna NoContent (Sem Conteúdo)
-                if (p.Count == 0)
+                if (produto.Count == 0)
                     return NoContent();
 
                 //Caso exista, retorna um Ok e os produtos
-                return Ok(p);
+                return Ok(produto);
             }
             catch (Exception ex)
             {
@@ -50,14 +50,14 @@ namespace Aula6_EfCore.Controllers
             try
             {
                 //Busca o produto pelo Id
-                var p = _produtoRepository.BuscarPorId(id);
+                var produto = _produtoRepository.BuscarPorId(id);
 
                 //Verifica se ele existe, caso não axista, retorna NotFound (Não Encontrado)
-                if (p == null)
+                if (produto == null)
                     return NotFound();
 
                 //Caso exista, retorna um Ok com os dados do produto
-                return Ok(p);
+                return Ok(produto);
             }
             catch (Exception ex)
             {
@@ -67,15 +67,15 @@ namespace Aula6_EfCore.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post(Produto p)
+        public IActionResult Post(Produto produto)
         {
             try
             {
                 //Adiciona um produto
-                _produtoRepository.Adicionar(p);
+                _produtoRepository.Adicionar(produto);
 
                 //Retorna com os dados do produto
-                return Ok(p);
+                return Ok(produto);
             }
             catch (Exception ex)
             {
@@ -85,7 +85,7 @@ namespace Aula6_EfCore.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(Guid id, Produto p)
+        public IActionResult Put(Guid id, Produto produto)
         {
             try
             {
@@ -94,10 +94,10 @@ namespace Aula6_EfCore.Controllers
                 if (produtoTemp == null)
                     return NotFound();
 
-                p.Id = id;
-                _produtoRepository.Editar(p);
+                produto.Id = id;
+                _produtoRepository.Editar(produto);
 
-                return Ok(p);
+                return Ok(produto);
             }
             catch (Exception ex)
             {

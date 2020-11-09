@@ -71,15 +71,15 @@ namespace Aula6_EfCore.Repositories
         /// <summary>
         /// Adiciona um novo produto 
         /// </summary>
-        /// <param name="p">Objeto do tipo produto</param>
-        public void Adicionar(Produto p)
+        /// <param name="produto">Objeto do tipo produto</param>
+        public void Adicionar(Produto produto)
         {
             try
             {
                 //Outras formas -> _ctx.Set<Produto>().Add(p);serve para *add, remove, update*
                 //Ou esse -> _ctx.Entry(p).State = Microsoft.EntityFrameworkCore.EntityState.Added;
                 //Adiciona um objeto do tipo produto ao DbSet do context
-                _ctx.Produtos.Add(p);
+                _ctx.Produtos.Add(produto);
                 //Salva alterações no context
                 _ctx.SaveChanges();
             }
@@ -93,21 +93,21 @@ namespace Aula6_EfCore.Repositories
         /// <summary>
         /// Edita um produto
         /// </summary>
-        /// <param name="p">Produto que será editado</param>
-        public void Editar(Produto p)
+        /// <param name="produto">Produto que será editado</param>
+        public void Editar(Produto produto)
         {
             try
             {
                 //Busca o produto pelo id
-                Produto produtoTemp = BuscarPorId(p.Id);
+                Produto produtoTemp = BuscarPorId(produto.Id);
 
                 //Verifica se o pedido existe e se não existr, exibe a mensagem
                 //if (produtoTemp == null)
                 //    throw new Exception("Produto não encontrado");
 
                 //Caso exista, altera as propriedades do produto
-                produtoTemp.Nome    = p.Nome;
-                produtoTemp.Preco   = p.Preco;
+                produtoTemp.Nome    = produto.Nome;
+                produtoTemp.Preco   = produto.Preco;
 
                 //Altera o produto no ctx e abaixo, salva o ctx
                 _ctx.Produtos.Update(produtoTemp);
