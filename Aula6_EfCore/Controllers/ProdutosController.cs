@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Aula6_EfCore.Domains;
 using Aula6_EfCore.Interfaces;
 using Aula6_EfCore.Repositories;
+using Aula6_EfCore.Utils;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -66,11 +68,20 @@ namespace Aula6_EfCore.Controllers
             }
         }
 
+        //FromForm -> recebe os dados do produto via form-Data
         [HttpPost]
-        public IActionResult Post(Produto produto)
+        public IActionResult Post([FromForm]Produto produto)
         {
             try
             {
+                //Verifica se foi enviado um arquivo com a imagem
+                if(produto.Imagem != null)
+                {
+                    var urlImagem = Upload.Local(produto.Imagem);
+
+                    produto.UrlImagem = urlImagem;
+                }
+
                 //Adiciona um produto
                 _produtoRepository.Adicionar(produto);
 
