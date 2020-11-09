@@ -22,40 +22,104 @@ namespace Aula6_EfCore.Controllers
             _produtoRepository = new ProdutoRepository();
         }
 
-        // GET: api/<ProdutosController>
         [HttpGet]
-        public List<Produto> Get()
+        public IActionResult Get()
         {
-            return _produtoRepository.Listar();
+            try
+            {
+                //Lista os produtos no repositório
+                var p = _produtoRepository.Listar();
+
+                //Verifica se eles existem, caso existam, retorna NoContent (Sem Conteúdo)
+                if (p.Count == 0)
+                    return NoContent();
+
+                //Caso exista, retorna um Ok e os produtos
+                return Ok(p);
+            }
+            catch (Exception ex)
+            {
+                //Caso ocorra algum erro, retorna um BadRequest e a mensagem de erro
+                return BadRequest(ex.Message);
+            }
         }
 
-        // GET api/<ProdutosController>/5
         [HttpGet("{id}")]
-        public Produto Get(Guid id)
+        public IActionResult Get(Guid id)
         {
-            return _produtoRepository.BuscarPorId(id);
+            try
+            {
+                //Busca o produto pelo Id
+                var p = _produtoRepository.BuscarPorId(id);
+
+                //Verifica se ele existe, caso não axista, retorna NotFound (Não Encontrado)
+                if (p == null)
+                    return NotFound();
+
+                //Caso exista, retorna um Ok com os dados do produto
+                return Ok(p);
+            }
+            catch (Exception ex)
+            {
+                //Caso ocorra algum erro, retorna um BadRequest e a mensagem de erro
+                return BadRequest(ex.Message);
+            }
         }
 
-        // POST api/<ProdutosController>
         [HttpPost]
-        public void Post(Produto p)
+        public IActionResult Post(Produto p)
         {
-            _produtoRepository.Adicionar(p);
+            try
+            {
+                //Adiciona um produto
+                _produtoRepository.Adicionar(p);
+
+                //Retorna com os dados do produto
+                return Ok(p);
+            }
+            catch (Exception ex)
+            {
+                //Caso ocorra algum erro, retorna um BadRequest e a mensagem de erro
+                return BadRequest(ex.Message);
+            }
         }
 
-        // PUT api/<ProdutosController>/5
         [HttpPut("{id}")]
-        public void Put(Guid id, Produto p)
+        public IActionResult Put(Guid id, Produto p)
         {
-            p.Id = id;
-            _produtoRepository.Editar(p);
+            try
+            {
+                var produtoTemp = _produtoRepository.BuscarPorId(id);
+
+                if (produtoTemp == null)
+                    return NotFound();
+
+                p.Id = id;
+                _produtoRepository.Editar(p);
+
+                return Ok(p);
+            }
+            catch (Exception ex)
+            {
+                //Caso ocorra algum erro, retorna um BadRequest e a mensagem de erro
+                return BadRequest(ex.Message);
+            }
         }
 
-        // DELETE api/<ProdutosController>/5
         [HttpDelete("{id}")]
-        public void Delete(Guid id)
+        public IActionResult Delete(Guid id)
         {
-            _produtoRepository.Remover(id);
+            try
+            {
+                _produtoRepository.Remover(id);
+
+                return Ok(id);
+            }
+            catch (Exception ex)
+            {
+                //Caso ocorra algum erro, retorna um BadRequest e a mensagem de erro
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

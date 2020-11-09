@@ -102,8 +102,8 @@ namespace Aula6_EfCore.Repositories
                 Produto produtoTemp = BuscarPorId(p.Id);
 
                 //Verifica se o pedido existe e se não existr, exibe a mensagem
-                if (produtoTemp == null)
-                    throw new Exception("Produto não encontrado");
+                //if (produtoTemp == null)
+                //    throw new Exception("Produto não encontrado");
 
                 //Caso exista, altera as propriedades do produto
                 produtoTemp.Nome    = p.Nome;
