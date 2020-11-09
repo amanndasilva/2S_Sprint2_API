@@ -9,8 +9,12 @@ namespace Aula6_EfCore.Interfaces
     public interface IPedidoRepository
     {
         List<Pedido> Listar();
-        Pedido BuscarPorId();
-        Pedido Adicionar(List<PedidoItem> pedidoItens);
 
+        /// <summary>
+        /// Adiciona um novo pedido
+        /// </summary>
+        /// <param name="pedidosItens">Itens do pedido</param>
+        /// <returns>Pedido</returns>
+        Pedido Adicionar(List<PedidoItem> pedidosItens);
     }
 }

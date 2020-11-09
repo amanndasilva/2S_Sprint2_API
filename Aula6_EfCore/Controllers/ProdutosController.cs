@@ -89,12 +89,6 @@ namespace Aula6_EfCore.Controllers
         {
             try
             {
-                var produtoTemp = _produtoRepository.BuscarPorId(id);
-
-                if (produtoTemp == null)
-                    return NotFound();
-
-                produto.Id = id;
                 _produtoRepository.Editar(produto);
 
                 return Ok(produto);
